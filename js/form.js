@@ -25,10 +25,4 @@ formSubmitBtn.addEventListener("click", function () {
     .catch(function (error) {
       alert("Помилка при відправці форми: " + error.message);
     });
-  // .then(function () {
-  //   alert("Дякую що відправили форму");
-  // })
-  // .catch(function () {
-  //   alert("Помилка при відправці форми");
-  // });
 });
