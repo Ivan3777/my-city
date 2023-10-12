@@ -51,3 +51,59 @@ body {
 .goit-logo {
   margin: 0px 0px 98px 0px;
 }
+
+.form-page {
+  padding: 60px 0px 60px 0px;
+}
+
+.form {
+  border-radius: 40px;
+  background: #ecf4f8;
+  width: 1170px;
+  margin: auto;
+  padding: 60px 100px 60px 100px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.form-title {
+  color: #1b1d1f;
+
+  text-align: center;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 48px;
+
+  margin-bottom: 40px;
+}
+
+.form-field {
+  color: #1b1d1f;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  border-radius: 12px;
+  border: 1px solid #2b4c5c;
+  width: 304px;
+  padding: 12px 24px 12px 24px;
+  margin-right: 24px;
+
+  box-sizing: border-box;
+}
+
+.form-submit-btn {
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  border-radius: 12px;
+  background: #ff6b0a;
+  padding: 12px 24px 12px 24px;
+  width: 300px;
+  box-sizing: border-box;
+  border: none;
+}
