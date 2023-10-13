@@ -10,6 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Philosopher&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="
+        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+        "
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/modal.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -54,6 +61,137 @@
         </button>
       </form>
     </section>
+    <section class="gallery-page">
+      <h2 class="gallery-title">Харків = місто студентів</h2>
+      <div class="wrapper">
+        <div class="gallery">
+          <button
+            class="gallery-modal-btn"
+            data-micromodal-trigger="modal"
+            data-index="0"
+          >
+            <img src="img/1.jpg" alt="Kharkiv photo 1" class="city-photo" />
+          </button>
+          <button
+            class="gallery-modal-btn"
+            data-micromodal-trigger="modal"
+            data-index="1"
+          >
+            <img src="img/2.jpg" alt="Kharkiv photo 2" class="city-photo" />
+          </button>
+          <button
+            class="gallery-modal-btn"
+            data-micromodal-trigger="modal"
+            data-index="2"
+          >
+            <img src="img/3.jpg" alt="Kharkiv photo 3" class="city-photo" />
+          </button>
+          <button
+            class="gallery-modal-btn"
+            data-micromodal-trigger="modal"
+            data-index="3"
+          >
+            <img src="img/4.jpg" alt="Kharkiv photo 4" class="city-photo" />
+          </button>
+          <button
+            class="gallery-modal-btn"
+            data-micromodal-trigger="modal"
+            data-index="4"
+          >
+            <img src="img/5.jpg" alt="Kharkiv photo 5" class="city-photo" />
+          </button>
+          <button
+            class="gallery-modal-btn"
+            data-micromodal-trigger="modal"
+            data-index="5"
+          >
+            <img src="img/6.jpg" alt="Kharkiv photo 6" class="city-photo" />
+          </button>
+          <button
+            class="gallery-modal-btn"
+            data-micromodal-trigger="modal"
+            data-index="6"
+          >
+            <img src="img/7.jpg" alt="Kharkiv photo 7" class="city-photo" />
+          </button>
+          <button
+            class="gallery-modal-btn"
+            data-micromodal-trigger="modal"
+            data-index="7"
+          >
+            <img src="img/8.jpg" alt="Kharkiv photo 8" class="city-photo" />
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="section-map">
+      <h3 class="section-map__title">🇺🇦 МІСТО-ГЕРОЙ НА МАПІ 🇺🇦</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164152.87938341146!2d36.12101798225614!3d49.99469535705923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f8b%3A0x2d4c18681aa4be0a!2z0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCw!5e0!3m2!1sru!2sfr!4v1690499198235!5m2!1sru!2sfr"
+        width="1000"
+        height="500"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <div class="modal micromodal-slide" id="modal" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-title"
+        >
+          <header class="modal__header">
+            <h2 class="modal__title" id="modal-title">Cвітлини міста Харків</h2>
+            <button
+              class="modal__close"
+              aria-label="Close modal"
+              data-micromodal-close
+            ></button>
+          </header>
+          <main class="modal__content" id="modal-content">
+            <div class="splide" role="group" aria-label="city-gallery">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="img/1.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/2.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/3.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/4.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/5.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/6.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/7.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/8.jpg" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="js/form.js"></script>
+    <script src="js/slider&modal.js"></script>
   </body>
 </html>

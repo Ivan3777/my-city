@@ -107,3 +107,56 @@ body {
   box-sizing: border-box;
   border: none;
 }
+
+.gallery-page {
+  padding-bottom: 30px;
+}
+
+.gallery-title {
+  color: #1b1d1f;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  margin: 0px 0px 80px 0px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gallery-modal-btn {
+  width: calc(25% - (3 * 25px / 4));
+  padding: 0;
+  background: none;
+  border: none;
+  margin-bottom: 24px;
+  border-radius: 48px;
+  cursor: pointer;
+}
+
+.city-photo {
+  width: 100%;
+  border-radius: 48px;
+}
+
+.section-map__title {
+  color: #1b1d1f;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+}
+
+.section-map {
+  padding-bottom: 30px;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
